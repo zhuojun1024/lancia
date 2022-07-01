@@ -101,7 +101,7 @@ export default class Render {
             await page.setViewport(opts.viewport);
             if (opts.emulateScreenMedia) {
                 logger.trace('RENDER => Emulate @media screen ..');
-                await page.emulateMedia('screen');
+                await page.emulateMediaType('screen');
             }
 
             if (opts.cookies && opts.cookies.length > 0) {
